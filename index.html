@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>School Timetable Maker</title>
+<title>STM</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
@@ -36,7 +36,6 @@ details.dt>summary::before{content:'▸';margin-right:8px;color:var(--p)}details
 details.dt>.in{padding:0 16px 16px;overflow-x:auto}
 #mod{display:none;position:fixed;inset:0;background:#0008;align-items:center;justify-content:center;z-index:9}#mod .card{width:340px;margin:0}#mod select{width:100%}
 </style></head><body>
-<header><h1>School Timetable Maker</h1><p>Set up your school, generate clash-free timetables, drag tiles to rearrange, and download as PDF, Word or Excel.</p></header>
 <main><div class="steps" id="nav"></div><div id="panel"></div>
 <div class="card"><div class="row"><button class="b" id="genBtn" onclick="gen()">Generate timetable</button>
 <button class="b s" onclick="saveFile()">Save data to file</button><button class="b s" onclick="$('#up').click()">Load data from file</button><input type="file" id="up" accept=".json,application/json" style="display:none" onchange="loadFile(this)"><button class="b d" onclick="resetAll()">Reset everything</button><span class="m" id="need"></span></div><div id="msg"></div></div>
